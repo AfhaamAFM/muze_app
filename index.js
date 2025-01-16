@@ -27,7 +27,7 @@ app.post('/sensor-data', (req, res) => {
   Body: ${JSON.stringify(body, null, 2)}
   ----------------------------
   `;
-
+    console.log(logEntry)
     const filePath = path.join(__dirname, 'requests.log'); // Path to the log file
 
     // Append log entry to the file
